@@ -1,6 +1,11 @@
 I am trying Heroku for the first time. These are my notes to
 help me remember what I did.
 
+heroku login #to login, obvs
+heroku logout #to logout, obvs
+foreman start #to run app locally
+Ctl-C to stop
+
 I have my branch no-db running on Heroku via this command:
 git push heroku no-db:master
 
