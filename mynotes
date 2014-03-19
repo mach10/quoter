@@ -1,0 +1,9 @@
+I am trying Heroku for the first time. These are my notes to
+help me remember what I did.
+
+I have my branch no-db running on Heroku via this command:
+git push heroku no-db:master
+
+Then I used:
+heroku ps:scale web=1 to start
+heroku ps:scale web=0 to stop
