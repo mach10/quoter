@@ -1,0 +1,10 @@
+<% if @quote %>
+  <p>Are you sure you want to delete the following quote: <em>"<%=h @quote.content %>"</em>?</p>
+  <form action="/<%= @quote.id %>" method="post">
+    <input type="hidden" name="_method" value="delete">
+    <input type="submit" value="Yes, Delete It!">
+    <a href="/<%= @quote.id %>">Cancel</a>
+  </form>
+<% else %>
+  <p>quote not found.</p>
+<% end %>

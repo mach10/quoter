@@ -1,0 +1,19 @@
+<section id="add">
+  <form action="/quote" method="post">
+    <textarea name="content" placeholder="Your quote&hellip;"></textarea>
+    <input type="submit" value="Add Quote!">
+  </form>
+</section>
+ 
+<% @quotes.each do |quote| %>
+  <article <%= 'class="complete"' if true %>>
+    <p>
+      <%=h quote.content %>
+      <span><a href="/<%= quote.id %>">[edit]</a></span>
+    </p>
+    <p class="links">
+      <a href="/<%= quote.id %>/complete">&#8623;</a>
+    </p>
+    <p class="meta">Created: <%= quote.created_at %></p>
+  </article>
+<% end %>

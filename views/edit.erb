@@ -1,0 +1,10 @@
+<% if @quote %>
+  <form action="/<%= @quote.id %>" method="post" id="edit">
+    <input type="hidden" name="_method" value="put">
+    <textarea name="content"><%=h @quote.content %></textarea>
+    <input type="submit" value="edit">
+  </form>
+  <p><a href="/<%= @quote.id %>/delete">Delete</a></p>
+<% else %>
+  <p>quote not found.</p>
+<% end %>
