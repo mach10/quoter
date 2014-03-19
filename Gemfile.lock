@@ -67,7 +67,6 @@ GEM
       rack (~> 1.4)
       rack-protection (~> 1.4)
       tilt (~> 1.3, >= 1.3.4)
-    sqlite3 (1.3.9)
     stringex (1.5.1)
     tilt (1.4.1)
     uuidtools (2.1.4)
@@ -80,4 +79,3 @@ DEPENDENCIES
   dm-sqlite-adapter
   nokogiri
   sinatra
-  sqlite3
