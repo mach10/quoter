@@ -1,7 +1,7 @@
 require 'nokogiri'
 require_relative 'quote'
 
-
+#not currently in use
 f = File.open("wit-wisdom-quotes.html")
 @doc = Nokogiri::HTML(f)
 f.close
