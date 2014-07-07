@@ -6,7 +6,7 @@ SITE_TITLE="Wit and Wisdom"
 #part threee http://code.tutsplus.com/tutorials/singing-with-sinatra-the-encore--net-19364
 
 DataMapper::setup(:default, "sqlite3://#{Dir.pwd}/recall.db")
-
+#some comment
 #sinatra default port = 4567 
 class Quote
   include DataMapper::Resource
