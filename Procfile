@@ -1,1 +1,1 @@
-web: bundle exec ruby quote.rb
+web: bundle exec ruby bin/quoter.rb
